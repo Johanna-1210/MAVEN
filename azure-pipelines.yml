@@ -10,8 +10,8 @@ pool: Test_Agent
 
 steps:
 - task: Maven@4
-inputs:
- mavenPomFile: 'pom.xml'
+  inputs:
+    mavenPomFile: 'pom.xml'
     goals: 'compile'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
